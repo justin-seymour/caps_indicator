@@ -56,11 +56,9 @@ int main()
             XkbGetIndicatorState(d, XkbUseCoreKbd, &n);
 
             if ((n & 1))
-            {
-                system("dunstify -r 100 'Caps Lock' -t 100");
-            }
+                system("dunstify -r 100 'Caps Lock' -t 1100");
 
-            sleep(0.5);
+            sleep(1);
         }
     }
 
